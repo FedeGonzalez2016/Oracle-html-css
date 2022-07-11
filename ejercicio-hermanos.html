@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<h1>Ejercicio diferencia de edad entre hermanos</h1>
+
+<!--¿Cuántos años de diferencia tienes con tu hermano? Escribe un programa que muestre el mensaje ¨Nuestra diferencia de edad es¨, concatenando el resultado de la diferencia de tu edad con la de tu hermano (o de un amigo). La respuesta puede dar negativa, sin duda. No olvides de usar las funciones saltarLinea e imprimir y de incluir la etiqueta <meta> para resolver problemas de acentuación. No necesitas enviar la respuesta, solo basta crear un programa, probar y verificar si todo funciona. ¡Si tienes alguna duda no dejes de postearla en el foro!-->
+
+<!--Datos necesarios:Año actual y año de nacimiento de los hermanos-->
+
+
+<script>
+
+    //Esta función introduce saltos de linea en el documento HTML, tantos como los cuales especifiquemos en la función
+
+	function saltoDeLinea() {
+
+	    document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        document.write("<br>");
+
+	}
+
+    //Esta función simplifica la función predefinida de document.write en solo imprimir
+
+    function imprimir(frase){
+
+        document.write(frase)
+        saltoDeLinea();    
+
+    }
+
+    //Este codigo calcula las edades de los hermanos según año de interés e ingresado.En caso de ser antes de la fecha de nacimiento de Federico y Leandro, o mayor al año 2100, mostrará error.
+
+    var year = prompt('Introducir año para realizar los calculos correspondientes');
+
+    if (year>1993 && year<2100){
+    
+	    imprimir("<big>Mi nombre es Federico, y tengo </big>" + (year-1993) + "<big> años </big>");
+	
+	    imprimir("<big>Mi hermano se llama Leandro y tiene </big>" + (year-1990) + "<big> años </big>");
+
+	    imprimir("<big>Nuestra diferencia de edad es de </big>" + (1993-1990) + "<big> años, siendo el mayor. </big>");
+    }else{
+
+        imprimir("<big>Ingrese un número válido por favor.</big>");
+
+    }
+	
+
+
+</script>

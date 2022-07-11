@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        *{background-color: rgba(25, 25, 18); color: aliceblue;}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMPLE</title>
+
+
+</head>
+
+    <script>
+
+function imprimir(imp){
+    document.write(imp)
+
+};
+
+function impBr(cant){
+    for (let index = 0; index < cant; index++) {
+    document.write("<br>")
+}
+
+};
+
+let miEdad = 24;
+let hermanoEdad = 20;
+
+imprimir("Mi edad es: " + miEdad);
+impBr(2);
+imprimir("La edad de mi hermano es: " + hermanoEdad);
+impBr(2);
+
+imprimir("La diferencia de edad de nosotros es de: " + (miEdad-hermanoEdad) + " años");
+
+    </script>
+<body>
+
+</body>
+</html>

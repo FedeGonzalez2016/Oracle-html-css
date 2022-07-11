@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h1>Programa cálculo IMC</h1>
+
+
+<script>
+
+    //Esta función introduce saltos de linea en el documento HTML, tantos como los cuales especifiquemos en la función
+
+	function saltoDeLinea() {
+
+	    document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        document.write("<br>");
+
+	}
+
+    //Esta función simplifica la función predefinida de document.write en solo imprimir
+
+    function imprimir(frase){
+
+        document.write(frase)
+        saltoDeLinea();    
+
+    }
+
+    //Programa que me permitirá calcular el IMC (indice de masa corporal) de la persona
+
+    function calcularImc (peso,altura,nombre) {
+
+        imc = peso / (altura * altura);
+        imprimir("El imc calculado de " + nombre + " es " + Math.round(imc));
+
+    }
+
+
+    calcularImc (66,1.72,"Fede");
+    calcularImc (75,1.73,"Leo");
+
+
+
+</script>
